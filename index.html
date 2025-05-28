@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 5px solid #007acc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      color: #007acc;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+
+    .dark-mode header,
+    .dark-mode footer {
+      background-color: #121212;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <header>
+    <h1>Hello, I'm Ritik</h1>
+    <p>Welcome to my website</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a student/developer/creative interested in web development, design, and technology. I love building things and learning new skills.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="#">Project One</a> - A short description of what this project does.</li>
+        <li><a href="#">Project Two</a> - A short description of what this project does.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Resume</h2>
+      <p>Download my resume <a href="resume.pdf" download>here</a>.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>You can find me on <a href="https://github.com/yourusername">GitHub</a> or email me at <a href="https://mail.google.com/">ritikofficial41@email.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ritik. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+
+</html>
